@@ -30,9 +30,17 @@ class Clock extends React.Component {
 
         return (
             <div>
-                <h1>GP Clock</h1>
-                <h3>{date}</h3>
-                <h3>{hours}:{minutes}:{seconds}</h3>
+                <h1 className='title'>GP Clock</h1>
+                <div className='border'>
+                    <div className='clock'>
+                        <h2>Date:</h2>
+                        <h2>{date}</h2>
+                    </div>
+                    <div className='clock'>
+                        <h2>Time:</h2>
+                        <h2>{hours}:{minutes}:{seconds}</h2>
+                    </div>
+                </div>
             </div> 
         )
     }
