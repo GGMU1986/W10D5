@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from './Header'
 
 class Tabs extends React.Component {
     constructor(props) {
@@ -7,7 +8,7 @@ class Tabs extends React.Component {
         this.state = {
             selectedTab: 0
         }
-        
+
         this.handleClick = this.handleClick.bind(this);
     }
 
