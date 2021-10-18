@@ -6,10 +6,6 @@ class Clock extends React.Component {
         
         this.state = {
             date: new Date(),
-            // dateString: this.date.toDateString(),
-            // hours: this.date.getHours(),
-            // minutes: this.date.getMinutes(),
-            // seconds: this.date.getSeconds()
         }
         this.tick = this.tick.bind(this);
     }
