@@ -3,9 +3,11 @@ import React from 'react'
 class Tabs extends React.Component {
     constructor(props) {
         super(props);
+
         this.state = {
             selectedTab: 0
         }
+        
         this.handleClick = this.handleClick.bind(this);
     }
 
@@ -14,8 +16,23 @@ class Tabs extends React.Component {
     }
 
     render() {
+        const content = this.props.tabs[this.state.selectedTab]
         return (
-            <Header tabs={this.props.tabs} idx={this.state.selectedTab}/>
+            <div>
+                <h1>Tabs</h1>
+                <div>
+                    <Header 
+                        tabs={this.props.tabs} 
+                        idx={this.state.selectedTab} 
+                        onTabChange={this.handleClick}>
+                    </Header>
+                    <div>
+                        <article>
+                            {content.content}
+                        </article>
+                    </div>
+                </div>
+            </div>
         )
     }
 }

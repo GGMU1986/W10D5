@@ -13,8 +13,10 @@ class App extends React.Component {
         ]
 
         return (
-            <Clock />
-            <Tabs tabs={tabs}/>
+            <div>
+                <Clock />
+                <Tabs tabs={tabs}/>
+            </div>
         )
     }
 }
