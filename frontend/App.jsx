@@ -1,5 +1,7 @@
 import React from 'react';
 import Clock from './Clock';
+import Tabs from './Tabs';
+
 
 
 class App extends React.Component {
